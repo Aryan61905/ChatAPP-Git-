@@ -1,5 +1,6 @@
 package com.example.chatapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -20,5 +21,10 @@ class Login : AppCompatActivity() {
         edtPassword=findViewById(R.id.edt_password)
         btnLogin=findViewById(R.id.Login_button)
         btnSignup=findViewById(R.id.Signup_button)
+
+        btnSignup.setOnClickListener{
+            val intent = Intent(this,SignUp::class.java)
+            startActivity(intent)
+        }
     }
 }
