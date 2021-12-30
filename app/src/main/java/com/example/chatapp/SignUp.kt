@@ -10,7 +10,7 @@ class SignUp : AppCompatActivity() {
     private lateinit var edtName: EditText
     private lateinit var edtEmail: EditText
     private lateinit var edtPassword: EditText
-    
+
     private lateinit var btnSignup: Button
 
     private lateinit var mAuth: FirebaseAuth
@@ -20,5 +20,22 @@ class SignUp : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_up)
+
+        edtEmail=findViewById(R.id.edt_email)
+        edtPassword=findViewById(R.id.edt_password)
+        edtName = findViewById(R.id.Name)
+        btnSignup=findViewById(R.id.Signup_button)
+
+        btnSignup.setOnClickListener{
+            val email = edtEmail.text.toString()
+            val password = edtPassword.text.toString()
+
+            signUp(email,password)
+
+        }
+    }
+
+    private fun signUp(email: String, password: String){
+        
     }
 }
