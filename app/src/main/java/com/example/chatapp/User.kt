@@ -11,7 +11,7 @@ class User {
         this.name = name
         this.email = email
         this.uid = uid
-        
+
     }
 
 
