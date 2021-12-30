@@ -10,7 +10,7 @@
         android:id="@+id/app_logo"
         android:layout_width="300dp"
         android:layout_height="300dp"
-        android:src="@drawable/App_Logo"
+        android:src="@drawable/applogo"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="100dp"/>
     <EditText
@@ -42,7 +42,7 @@
         android:layout_height="100dp"
         android:layout_below="@id/edt_password"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/Login_Button"
+        android:src="@drawable/loginbtn"
         android:layout_marginTop="18dp"/>
     <ImageButton
         android:id="@+id/Signup_button"
@@ -50,7 +50,7 @@
         android:layout_height="100dp"
         android:layout_below="@id/Login_button"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/SignUp_Button"
+        android:src="@drawable/signupbtn"
         android:layout_marginTop="18dp"/>
 
 </RelativeLayout>
