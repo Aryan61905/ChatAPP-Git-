@@ -35,6 +35,17 @@ class Login : AppCompatActivity() {
         btnLogin.setOnClickListener{
             val email = edtEmail.text.toString()
             val password = edtPassword.text.toString()
+
+            login(email,password);
         }
     }
+
+    private fun login (email:String,password:String){
+
+
+
+
+    }
+
+
 }
