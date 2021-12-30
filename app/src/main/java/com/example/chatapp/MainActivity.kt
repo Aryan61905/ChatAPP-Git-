@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
 
         userList = ArrayList()
         adapter = UserAdapter(this,userList)
-        
+
 
 
 
