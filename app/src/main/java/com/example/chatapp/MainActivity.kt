@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.auth.FirebaseAuth
 
@@ -24,7 +25,10 @@ class MainActivity : AppCompatActivity() {
 
         mAuth = FirebaseAuth.getInstance()
 
+        userRecyclerView = findViewById(R.id.userRecylcerView)
 
+        userRecyclerView.layoutManager = LinearLayoutManager(this)
+        userRecyclerView.adapter = adapter
 
     }
 
@@ -39,7 +43,7 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this@MainActivity,Login::class.java)
             finish()
             startActivity(intent)
-            
+
             return true
     }
 }
