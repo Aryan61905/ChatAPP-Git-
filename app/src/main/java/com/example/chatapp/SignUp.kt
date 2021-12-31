@@ -22,7 +22,7 @@ class SignUp : AppCompatActivity() {
     private lateinit var mDbRef: DatabaseReference
 
 
-
+//
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_up)
