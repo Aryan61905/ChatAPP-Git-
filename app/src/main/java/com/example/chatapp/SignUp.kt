@@ -48,6 +48,7 @@ class SignUp : AppCompatActivity() {
                 if (task.isSuccessful) {
                     addUserToDatabase(name,email, mAuth.currentUser?.uid!!)
                     val intent = Intent(this@SignUp, MainActivity::class.java)
+                    finish()
                     startActivity(intent)
                 } else {
                     Toast.makeText(this@SignUp, "ERROR 05: Check your credentials and Try Again", Toast.LENGTH_SHORT).show()
