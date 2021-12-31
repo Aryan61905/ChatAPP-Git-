@@ -52,10 +52,12 @@
     <Button
         android:id="@+id/Signup_button"
         android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_height="40dp"
         android:layout_below="@id/edt_password"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/signupbtn"
+        android:text="SIGN UP"
+        android:textColor="@color/white"
+        android:background="@color/palegreen"
         android:layout_marginTop="18dp"/>
 
 </RelativeLayout>
