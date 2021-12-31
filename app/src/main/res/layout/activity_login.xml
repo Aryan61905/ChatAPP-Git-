@@ -36,7 +36,7 @@
         android:layout_marginLeft="28dp"
         android:layout_marginRight="28dp"/>
 
-    <ImageButton
+    <Button
         android:id="@+id/Login_button"
         android:layout_width="100dp"
         android:layout_height="100dp"
@@ -44,7 +44,7 @@
         android:layout_centerHorizontal="true"
         android:src="@drawable/loginbtn"
         android:layout_marginTop="18dp"/>
-    <ImageButton
+    <Button
         android:id="@+id/Signup_button"
         android:layout_width="100dp"
         android:layout_height="100dp"

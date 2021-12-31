@@ -49,7 +49,7 @@
         android:layout_marginRight="28dp"/>
 
 
-    <ImageButton
+    <Button
         android:id="@+id/Signup_button"
         android:layout_width="100dp"
         android:layout_height="100dp"
