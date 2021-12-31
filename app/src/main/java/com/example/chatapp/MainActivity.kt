@@ -45,7 +45,7 @@ class MainActivity : AppCompatActivity() {
                         userList.add(currentUser!!)
                     }
 
-                    userList.add(currentUser!!)
+
 
                 }
                 adapter.notifyDataSetChanged()
