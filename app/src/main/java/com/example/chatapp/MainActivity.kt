@@ -40,6 +40,11 @@ class MainActivity : AppCompatActivity() {
                 for(postSnapshot in snapshot.children){
 
                     val currentUser = postSnapshot.getValue(User::class.java)
+
+                    if(mAuth.currentUser?.uid != currentUser.uid){
+                        userList.add(currentUser!!)
+                    }
+
                     userList.add(currentUser!!)
 
                 }
