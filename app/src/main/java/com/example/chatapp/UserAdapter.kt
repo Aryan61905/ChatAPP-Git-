@@ -8,14 +8,14 @@ import android.widget.TextView
 import androidx.appcompat.view.menu.MenuView
 import androidx.recyclerview.widget.RecyclerView
 
-class UserAdapter(val cotext: Context,val userList: ArrayList<User>):
+class UserAdapter(val context: Context,val userList: ArrayList<User>):
     RecyclerView.Adapter<UserAdapter.UserViewHolder>() {
 
 
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): UserViewHolder {
-        val view: View = LayoutInflater.from(cotext).inflate(R.layout.user_layout,parent, false)
+        val view: View = LayoutInflater.from(context).inflate(R.layout.user_layout,parent, false)
         return UserViewHolder(view)
     }
 
